@@ -1,0 +1,29 @@
+.horizontal-center{
+	height:1200px;
+	width:200px;
+	margin:100px auto;
+	color:#BC8F8F;
+}
+
+.horizontal-center-fixed{
+	height:1200px;
+	width:200px;
+	margin:100px auto;
+	color:#5F9EA0;
+	opacity:0.2;
+	padding:30px;
+	position: fixed;
+	top:-65px;
+	right:38%;
+	z-index:-1111;
+}
+
+a{
+	text-decoration: none;
+	color:#BC8F8F;
+}
+
+a:hover{
+	background-color:#5F9EA0;
+	opacity:0.2;
+}

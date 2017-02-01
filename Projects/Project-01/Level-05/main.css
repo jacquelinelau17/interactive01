@@ -1,0 +1,35 @@
+.h{
+	font-family:'Lekton';
+	font-size: 9em;
+	letter-spacing: 10pt;
+	text-transform: uppercase;
+	color:black;
+	text-align: left;
+	position:fixed;
+	margin-top:-50px;
+	margin-left:10px;
+	}
+
+/*.st{
+	font-family:'Lekton';
+	font-size: 4em;
+	text-transform: uppercase;
+}
+*/
+body{
+	font-family:'Lekton';
+	font-weight:300;
+	color:#4682B4;
+	text-align: right;
+}
+
+.adj{
+	font-family:'Lekton';
+	font-weight:bold;
+	font-size: 7em;
+	text-transform: uppercase;
+	letter-spacing:5pt;
+	color:#4682B4;
+	opacity:0.5;
+}
+
