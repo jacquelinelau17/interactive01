@@ -1,0 +1,84 @@
+    *{
+        background-color:#3D3E42;
+    }
+
+    .poem{
+        margin: 50px auto;
+        width: 300px;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing:3pt;
+        font-weight:300;
+        text-transform:uppercase;
+        opacity:0.5;
+        font-size:0.7em;
+        line-height:12pt;
+
+
+    }
+
+    .h{
+       font-family: 'Allerta Stencil', sans-serif;
+       margin: 50px auto;
+       width: 300px;
+       letter-spacing:10pt;
+       text-transform:uppercase;
+       color:#6394AB;
+    }
+
+    .h:hover{
+       transform: scale(1.2);
+       transition: 0.2s;
+    }
+
+    .one{
+        width: 100px;
+        height: 30px;
+        color: transparent;
+        background-color: #6E0000;
+        transition: 0.2s;
+        top:20%;
+
+    }
+
+    .one:hover{
+        width: 350px;
+        height: 200px;
+        color: white;
+        padding:7%;
+
+    }
+
+    .two{
+        width: 200px;
+        height: 30px;
+        color: transparent;
+        background-color: #B80000;
+        transition: 0.2s;
+        top:20%;
+
+    }
+
+    .two:hover{
+        width: 350px;
+        height: 200px;
+        color: white;
+        padding:7%;
+
+    }
+
+    .three{
+        width: 300px;
+        height: 30px;
+        color: transparent;
+        background-color: #FA5858;
+        transition: 0.2s;
+        top:20%;
+    }
+
+    .three:hover{
+        width: 350px;
+        height: 150px;
+        color: white;
+        padding:7%;
+
+    }
