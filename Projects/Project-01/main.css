@@ -1,12 +1,13 @@
 * {
 	box-sizing: border-box;
+	background-color:#f0e7de;
 }
 
 body{
 
 	font-family: 'Cormorant Garamond', serif;
 	line-height: 1.5em;
-	background:white;
+	color:#7F93C9;
 	font-size: 1em;
 }
 
