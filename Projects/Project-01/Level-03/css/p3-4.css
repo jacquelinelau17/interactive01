@@ -1,8 +1,7 @@
 .horizontal-center{
-	width:600px;
-	margin-left:10%;
-	color:#BBD0A3;
-	font-size:3em;
+	width:400px;
+	color:#C884AC;
+	margin:10%;
 }
 
 .horizontal-center-fixed{
@@ -21,7 +20,7 @@
 }
 
 .position-2{
-	margin-top:40%;
+	margin-top:20%;
 	padding-left:20%;
 	position:absolute;
 	opacity:0.1;
@@ -29,17 +28,14 @@
 }
 
 .position-3{
-	margin-top:100%;
+	margin-top:40%;
 	padding-left:40%;
 	position:absolute;
 	opacity:0.3;
 	display:block;
 }
 
-.position-4{
-	margin-top:160%;
-	margin-left:-4%;
-	position:absolute;
-	opacity:0.1;
-	display:block;
+.color-block-1{
+	background-color:#F7F3FF;
+	padding:10%;
 }

@@ -1,0 +1,89 @@
+body{
+       margin: 0;
+			 font-family: 'Josefin Sans', sans-serif;
+       background-color: #500101;
+	        }
+ 
+   
+  .a{
+    line-height: 40px;
+    text-align: center;
+
+  }
+
+  h1{
+    text-align: center;
+    color:#ffffff;
+    font-style:uppercase;
+  }
+
+  h4{
+    text-align: center;
+    color:#ffffff;
+  }
+
+@keyframes mymove {
+    from {left: -1000px;}
+    to {top: 0px;}
+}
+
+   .box1{
+   	padding: 20px;
+   	background-color: #FFE3E3;
+   	margin: 20px;
+    position: relative;
+   	left:0px;
+            animation-fill-mode: backwards; 
+            animation: mymove 1.5s;
+            animation-duration: 1.5s;
+            animation-delay: 0s;
+   }
+
+   .box2{
+   	padding: 20px;
+   	background-color: #F4C7C7;
+   	margin: 20px;
+    position: relative;
+   	left:0px;
+            animation-fill-mode: backwards; 
+            animation: mymove 1.5s;
+            animation-duration: 1.5s;
+            animation-delay: 0.1s;
+   }
+
+   .box3{
+   	padding: 20px;
+   	background-color: #E7A7A7;
+   	margin: 20px;
+  	position: relative;
+   	left:0px;
+            animation-fill-mode: backwards; 
+            animation: mymove 1.5s;
+            animation-duration: 1.5s;
+            animation-delay: 0.2s;
+   }
+
+   .box4{
+   	padding: 20px;
+   	background-color: #E78F8F;
+   	margin: 20px;
+   	position: relative;
+    left: 0px;
+            animation-fill-mode: backwards; 
+            animation: mymove 1.5s;
+            animation-duration: 1.5s;
+            animation-delay: 0.3s;
+   }
+
+   .box5{
+   	padding: 20px;
+   	background-color: #F27D7D;
+   	margin: 20px;
+   	position: relative;
+   	left: 0px;
+            animation-fill-mode: backwards; 
+            animation: mymove 1.5s;
+            animation-duration: 1.5s;
+            animation-delay: 0.4s;
+   }
+

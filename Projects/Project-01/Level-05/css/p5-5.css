@@ -1,0 +1,54 @@
+.poem{
+      overflow: scroll;
+      margin: 50px auto;
+      width: 400px;
+      font-family: 'Lekton', sans-serif;
+
+    }
+
+.h{
+      font-family: 'Barrio', cursive;
+      margin: 50px auto;
+      width: 500px;
+    }
+
+.adj{
+      margin: 10px auto;
+      width: 300px;
+      font-family: 'Lekton', sans-serif;
+      font-weight: 700;
+    }
+
+.one{
+
+      height: 200px;
+      width: 200px;
+      background-color: #93E5F0;
+      transform: rotate(20deg);
+      margin: 100px auto;
+      padding:20px;
+    }
+
+.two{
+      position: absolute;
+      width: 200px;
+      height: 250px;
+      background-color: #63A3D8;
+      transform: rotate(-20deg);
+      margin: 50px;
+      top: 300px;
+      padding:20px;
+    
+    }
+
+.three{
+      width: 200px;
+      height: 200px;
+      background-color: #A38DF5;
+      transform: rotate(-30deg);
+      margin: 200px auto;
+      position: absolute;
+      top: 200px;
+      right: 120px;
+      padding:20px;
+    }

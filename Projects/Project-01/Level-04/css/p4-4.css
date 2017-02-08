@@ -1,0 +1,51 @@
+.horizontal-center{
+	width:600px;
+	margin:100px auto;
+	color:#3E0767;
+}
+
+.h{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight:500;
+	font-size: 2em;
+	line-height:24pt;
+	letter-spacing: 3pt;
+	text-align:right;
+	color:#EFE5B5;
+	float:left;
+	position:fixed;
+	border-style:dotted;
+	border-color:#ffffff;
+	background-color:#632892;
+	padding:20px;
+	margin:20px;
+	}
+
+.st{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight:500;
+	text-align:center;
+	color:#EFE5B5;
+	float:left;
+	position:fixed;
+	background-color:#632892;
+	border-style:dotted;
+	border-color:#ffffff;
+	letter-spacing:2pt;
+	padding:20px;
+	margin:20px;
+}
+
+.body{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight:300;
+	text-align:left;
+	letter-spacing:10pt;
+}
+
+.adj{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight:700;
+	font-style:italic;
+}
+
