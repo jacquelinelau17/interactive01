@@ -223,3 +223,168 @@ body {
 	transform:rotate(-10deg);
 	position:absolute;
 }
+
+.petal-1{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F5A9D5;
+  margin-top:20%;
+  margin-left:55%;
+  border-radius: 0 50% 50% 50%;
+}
+
+.petal-2{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F5A9D5;
+  margin-top:19.5%;
+  margin-left:54.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(72deg);
+}
+
+.petal-3{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F5A9D5;
+  margin-top:19%;
+  margin-left:54.8%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(144deg);
+}
+
+
+.petal-4{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F5A9D5;
+  margin-top:19%;
+  margin-left:55.3%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(216deg);
+}
+
+.petal-5{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F5A9D5;
+  margin-top:19.5%;
+  margin-left:55.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(288deg);
+}
+
+.petal-1a{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F7679F;
+  margin-top:20%;
+  margin-left:56%;
+  border-radius: 0 50% 50% 50%;
+}
+
+.petal-2a{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F7679F;
+  margin-top:19.5%;
+  margin-left:55.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(72deg);
+}
+
+.petal-3a{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F7679F;
+  margin-top:19%;
+  margin-left:55.8%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(144deg);
+}
+
+
+.petal-4a{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F7679F;
+  margin-top:19%;
+  margin-left:56.3%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(216deg);
+}
+
+.petal-5a{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #F7679F;
+  margin-top:19.5%;
+  margin-left:56.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(288deg);
+}
+
+.petal-1b{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #C35FB1;
+  margin-top:20%;
+  margin-left:54%;
+  border-radius: 0 50% 50% 50%;
+}
+
+.petal-2b{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #C35FB1;
+  margin-top:19.5%;
+  margin-left:53.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(72deg);
+}
+
+.petal-3b{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #C35FB1;
+  margin-top:19%;
+  margin-left:53.8%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(144deg);
+}
+
+
+.petal-4b{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #C35FB1;
+  margin-top:19%;
+  margin-left:54.3%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(216deg);
+}
+
+.petal-5b{
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  background: #C35FB1;
+  margin-top:19.5%;
+  margin-left:54.5%;
+  border-radius: 0 50% 50% 50%;
+  transform:rotate(288deg);
+}
