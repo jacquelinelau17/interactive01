@@ -203,9 +203,9 @@ function draw() {
 
   fill(255, 255, 255, 100);
   noStroke();
-  quad(x-70, y+50, x-50, y+50, x+30, 0, x+10, 0);
+  quad(x-70, y+230, x-50, y+230, x+30, 0, x+10, 0);
   
-if ( mouseY >=0 && mouseY <=630 && mouseX >= 200 && mouseX <= 500) {
+if ( mouseY >=0 && mouseY <=630 && mouseX >= width/2-100 && mouseX <= width/2+100) {
 
     fill(255);
     noStroke();
@@ -213,7 +213,7 @@ if ( mouseY >=0 && mouseY <=630 && mouseX >= 200 && mouseX <= 500) {
     textFont("Helvetica");
     textAlign(CENTER);
     textLeading(20);
-    text("Before the 1950s, standard sized soft-drink bottles were 6.5 ounces. By the 1960s, 12 ounce cans were the new standard. In the 1990s, plastic bottles became 20 ounces. The giant plastic bottles that we are familiar with today are 42 ounces, almost 7 times the original size in the 1950s.", width/2-90, 210+i, 180, 1000);   
+    text("Before the 1950s, standard sized soft-drink bottles were 6.5 ounces. By the 1960s, 12 ounce cans were the new standard. In the 1990s, plastic bottles became 20 ounces. The giant plastic bottles that we are familiar with today are 42 ounces, almost 7 times the original size in the 1950s.", width/2-85, 210+i, 180, 1000);   
     }
 
     if(i<240){
