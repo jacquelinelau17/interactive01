@@ -4,23 +4,22 @@
 }
 
 body{
-
-	font-family: 'Cormorant Garamond', serif;
 	line-height: 1.5em;
 	color:#7F93C9;
 	font-size: 1em;
 }
 
-h1{
+.h1{
 	margin: 20px;
 	font-size: 3em;
-	font-style: bold;
+	font-family: 'Libre Franklin', sans-serif;
 }
 
 .main{
 	width: 80%;
 	margin: 100px auto;
 	padding: 50px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 

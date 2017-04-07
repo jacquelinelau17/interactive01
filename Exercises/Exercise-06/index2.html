@@ -1,0 +1,240 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+	<style>
+
+		.draggable1{ 
+			width:10%;
+          	color: black;
+          	text-align:center;
+          	padding: 50px auto;
+          	text-transform:uppercase;
+          	background-color: #f1e4e8;
+          	margin:auto;
+          	margin-top:100px;
+  		}
+
+  		.sorbet1{
+  			background-color: #F79A8F;
+  		}
+
+  		.draggable2{ 
+			width:10%;
+          	color: black;
+          	text-align:center;
+          	padding: 50px auto;
+          	text-transform:uppercase;
+          	background-color: #e2dcde;
+          	margin:auto;
+          	margin-top:100px;
+  		}
+
+  		.draggable3{ 
+			width:10%;
+          	color: black;
+          	text-align:center;
+          	padding: 50px auto;
+          	text-transform:uppercase;
+          	background-color: #ceb1be;
+          	margin:auto;
+          	margin-top:100px;
+  		}
+
+  		.draggable4{ 
+			width:10%;
+          	color: black;
+          	text-align:center;
+          	padding: 50px auto;
+          	text-transform:uppercase;
+          	background-color: #b97375;
+          	margin:auto;
+          	margin-top:100px;
+  		}
+
+  		.draggable5{ 
+			width:10%;
+          	color: white;
+          	text-align:center;
+          	padding: 50px auto;
+          	text-transform:uppercase;
+          	background-color: #2d2d34;
+          	margin:auto;
+          	margin-top:100px;
+  		}
+
+         .droppable1{
+         	width:10%;
+          	background-color: yellow;
+          	border: black 3px dashed;
+         	text-align:center;
+         	padding: 50px auto;
+         	text-transform:uppercase;
+         	color:black;
+         	margin:auto;
+         	margin-top:50px;
+         }
+
+         .droppable2{
+         	width:10%;
+          	background-color: yellow;
+          	border: black 3px dashed;
+         	text-align:center;
+         	padding: 50px auto;
+         	text-transform:uppercase;
+         	color:black;
+         	margin:auto;
+         	margin-top:50px;
+         }
+
+         .droppable3{
+         	width:10%;
+          	background-color: yellow;
+          	border: black 3px dashed;
+         	text-align:center;
+         	padding: 50px auto;
+         	text-transform:uppercase;
+         	color:black;
+         	margin:auto;
+         	margin-top:50px;
+         }
+
+         .droppable4{
+         	width:10%;
+          	background-color: yellow;
+          	border: black 3px dashed;
+         	text-align:center;
+         	padding: 50px auto;
+         	text-transform:uppercase;
+         	color:black;
+         	margin:auto;
+         	margin-top:50px;
+         }
+
+         .droppable5{
+         	width:10%;
+          	background-color: yellow;
+          	border: black 3px dashed;
+         	text-align:center;
+         	padding: 50px auto;
+         	text-transform:uppercase;
+         	color:black;
+         	margin:auto;
+         	margin-top:50px;
+         }
+
+
+
+         .draggable1:hover{
+          	cursor: cell;
+         }
+
+          .draggable2:hover{
+          	cursor: cell;
+         }
+
+          .draggable3:hover{
+          	cursor: cell;
+         }
+
+          .draggable4:hover{
+          	cursor: cell;
+         }
+
+          .draggable5:hover{
+          	cursor: cell;
+         }
+
+	</style>
+
+	<script>
+
+		$(function(){
+	        $('.draggable1').draggable();
+	        $('.droppable1').droppable();
+
+	        $('.draggable2').draggable();
+	        $('.droppable2').droppable();
+
+	        $('.draggable3').draggable();
+	        $('.droppable3').droppable();
+
+	        $('.draggable4').draggable();
+	        $('.droppable4').droppable();
+
+	        $('.draggable5').draggable();
+	        $('.droppable5').droppable();
+	    });
+
+	    // $('.draggable').draggable({scope:"droppable"});
+     //      $('.droppable').droppable({
+     //        scope: 'droppable',
+     //        drop: function(event, ui){
+     //          $(this)
+     //          .addClass("droppable")
+     //          .find("p")
+     //          .html("Complete");
+     //        }
+     //      });
+
+          $('.draggable1').draggable();
+          $('.droppable1').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass(".sorbet1")
+              .find("p")
+              .html("Dropped");
+            }
+          });
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+	<div class="ui-widget-content draggable1">
+	<p> Drag me </p>
+	</div>
+    <div class="ui-widget-header droppable1">
+     <p> Drop here </p>
+    </div>
+
+    <div class="ui-widget-content draggable2">
+	<p> Drag me </p>
+	</div>
+    <div class="ui-widget-header droppable2">
+     <p> Drop here </p>
+    </div>
+
+    <div class="ui-widget-content draggable3">
+	<p> Drag me </p>
+	</div>
+    <div class="ui-widget-header droppable3">
+     <p> Drop here </p>
+    </div>
+
+    <div class="ui-widget-content draggable4">
+	<p> Drag me </p>
+	</div>
+    <div class="ui-widget-header droppable4">
+     <p> Drop here </p>
+    </div>
+
+    <div class="ui-widget-content draggable5">
+	<p> Drag me </p>
+	</div>
+    <div class="ui-widget-header droppable5">
+     <p> Drop here </p>
+    </div>
+
+
+</body>
+
+</html>
