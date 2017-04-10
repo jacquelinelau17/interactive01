@@ -12,27 +12,19 @@ function setup() {
 }
 
 function draw() {
+
 	background(0);
 
-	noStroke();
-	fill(255,0,0);
-	triangle(x, y-50, x-50, y+50, x+50, y+50);
-	fill(255);
-	rect(x-25, y-25, 50, 70);
-	fill(random(255),random(255),random(255))
-	ellipse(x, y, 50, 50);
-	fill(0);
-	ellipse(x-10, y, 5, 5);
-	ellipse(x+10,y, 5, 5);
-	arc(x,y, 10, 10, 0, PI);
+	noFill();
+  	stroke(random(255), random(255), random(255));
+  	strokeWeight(3);
 
+  	rect(x-65, y-175, 330, 24)
+  	quad(x, y+150, x-200, y+150, x-245, y-350, x+45, y-350);
 
-	fill(0,0, 255);
-	rect(x+100, y, 100, 100);
-	fill(0,0,200);
-	quad(x+100, y, x+200, y, x+250, y-50, x+150, y-50);
-	fill(0,0,100);
-	quad(x+200, y, x+250, y-50, x+250, y+50, x+200, y+100);
+  	fill(random(255), random(255), random(255));
+  	noStroke();
+  	quad(x-170, y+130, x-150, y+130, x-70, y-100, x-90, y-100);
 
 
 	if(x > width ||x < 0){
