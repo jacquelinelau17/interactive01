@@ -20,7 +20,7 @@
   		}
 
   		.sorbet1{
-  			background-color: #F79A8F;
+  			background-color: #F79A8F !important;
   		}
 
   		.draggable2{ 
@@ -32,44 +32,129 @@
           	background-color: #e2dcde;
           	margin:auto;
           	margin-top:100px;
+
   		}
 
-  		.draggable3{ 
-			width:10%;
-          	color: black;
-          	text-align:center;
-          	padding: 50px auto;
-          	text-transform:uppercase;
-          	background-color: #ceb1be;
-          	margin:auto;
-          	margin-top:100px;
-  		}
+  		 .sorbet2{
+          background-color: #F79A8F !important;
+        }
+
+
+  		@keyframes sunset{
+          from{
+            background-color: #D18ABC;
+            margin-left: 1200px;
+          }
+          to{
+            background-color:#F08435;
+            margin-left:0;
+          }
+        }
+
+        .sunset{
+          width: 150px;
+          height: 100px;
+          background-color: #F08435;
+          animation-name: sunset;
+          animation-duration: 4s;
+        }
+
+        #sunsetdrag{
+          width: 150px;
+          height: 100px;
+          margin:auto;
+          text-align:center;
+          text-transform:uppercase;
+          margin-top:100px;
+          padding-top:40px;
+        }
+
+        #sunsetblock{
+          width: 150px;
+          height: 100px;
+          margin:auto;
+          border: #F08435 4px dashed;
+          text-align:center;
+          text-transform:uppercase;
+          margin-top:100px;
+        }
 
   		.draggable4{ 
 			width:10%;
           	color: black;
           	text-align:center;
           	padding: 50px auto;
+          	text-align:center;
           	text-transform:uppercase;
           	background-color: #b97375;
           	margin:auto;
           	margin-top:100px;
   		}
 
-  		.draggable5{ 
-			width:10%;
-          	color: white;
-          	text-align:center;
-          	padding: 50px auto;
-          	text-transform:uppercase;
-          	background-color: #2d2d34;
-          	margin:auto;
-          	margin-top:100px;
-  		}
+  		   @keyframes movingRainbow{
+          0%{
+            background-color:red; 
+            left:0px; 
+            top:0px;
+          }
+
+          25%{
+            background-color:yellow; 
+            left:200px; 
+            top:0px;
+          }
+          
+          50%{
+            background-color:blue; 
+            left:200px; 
+            top:200px;
+          }
+
+          75%{
+            background-color:green; 
+            left:0px; 
+            top:200px;
+          }
+
+          100%{
+            background-color:red; 
+            left:0px; 
+            top:0px;
+          }
+
+        }
+
+  		  .rainbowMoving{
+          width: 150px;
+          height: 100px;
+          position: relative;
+          background-color: white;
+          animation-name: movingRainbow;
+          animation-duration: 5s;
+        }
+
+        #movingRainbowDrag{
+          width: 150px;
+          height: 100px;
+          margin:auto;
+          text-align:center;
+          text-transform:uppercase;
+          margin-top:100px;
+          padding-top:40px;
+        }
+
+        #movingRainbowBlock{
+          width: 150px;
+          height: 100px;
+          margin:auto;
+          text-align:center;
+          text-transform:uppercase;
+          border: black 4px dashed;
+        }
 
          .droppable1{
          	width:10%;
-          	background-color: yellow;
+          	background-color: #f1e4e8;
           	border: black 3px dashed;
          	text-align:center;
          	padding: 50px auto;
@@ -91,17 +176,6 @@
          	margin-top:50px;
          }
 
-         .droppable3{
-         	width:10%;
-          	background-color: yellow;
-          	border: black 3px dashed;
-         	text-align:center;
-         	padding: 50px auto;
-         	text-transform:uppercase;
-         	color:black;
-         	margin:auto;
-         	margin-top:50px;
-         }
 
          .droppable4{
          	width:10%;
@@ -115,20 +189,6 @@
          	margin-top:50px;
          }
 
-         .droppable5{
-         	width:10%;
-          	background-color: yellow;
-          	border: black 3px dashed;
-         	text-align:center;
-         	padding: 50px auto;
-         	text-transform:uppercase;
-         	color:black;
-         	margin:auto;
-         	margin-top:50px;
-         }
-
-
-
          .draggable1:hover{
           	cursor: cell;
          }
@@ -137,73 +197,84 @@
           	cursor: cell;
          }
 
-          .draggable3:hover{
-          	cursor: cell;
-         }
-
           .draggable4:hover{
           	cursor: cell;
          }
 
-          .draggable5:hover{
-          	cursor: cell;
+         #movingRainbowDrag:hover{
+         	cursor:cell;
          }
+
+         #sunsetdrag{
+         	cursor:cell;
+         }
+
 
 	</style>
 
 	<script>
 
-		$(function(){
-	        $('.draggable1').draggable();
-	        $('.droppable1').droppable();
+        $(function(){
 
-	        $('.draggable2').draggable();
-	        $('.droppable2').droppable();
+				$('.draggable1').draggable();
 
-	        $('.draggable3').draggable();
-	        $('.droppable3').droppable();
+				$('.droppable1').droppable({
+					  drop: function(event, ui){
+		              $(this)
+		              .addClass("sorbet1")
+		              .find("p")
+		              .html("Dropped!");
+				}
 
-	        $('.draggable4').draggable();
-	        $('.droppable4').droppable();
+			});
 
-	        $('.draggable5').draggable();
-	        $('.droppable5').droppable();
-	    });
+				$('.draggable2').draggable();
 
-	    // $('.draggable').draggable({scope:"droppable"});
-     //      $('.droppable').droppable({
-     //        scope: 'droppable',
-     //        drop: function(event, ui){
-     //          $(this)
-     //          .addClass("droppable")
-     //          .find("p")
-     //          .html("Complete");
-     //        }
-     //      });
+				$('.droppable2').droppable({
+					  drop: function(event, ui){
+		              $(this)
+		              .addClass("sorbet2")
+		              .find("p")
+		              .html("Dropped!");
+				}
 
-          $('.draggable1').draggable();
-          $('.droppable1').droppable({
+			});
+
+			$('#sunsetdrag').draggable();
+          	$('#sunsetblock').droppable({
             drop: function(event, ui){
               $(this)
-              .addClass(".sorbet1")
+              .addClass("sunset")
               .find("p")
-              .html("Dropped");
+              .html("Sunset!");
             }
           });
 
 
+          $('#movingRainbowDrag').draggable();
+          $('#movingRainbowBlock').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass("rainbowMoving")
+              .find("p")
+              .html("I'm a moving rainbow!");
+            }
+          });
 
+	
+        });
 	</script>
 
 </head>
 
 <body>
 
-	<div class="ui-widget-content draggable1">
+ 	<div class="ui-widget-content draggable1">
 	<p> Drag me </p>
 	</div>
-    <div class="ui-widget-header droppable1">
-     <p> Drop here </p>
+
+	<div class="ui-widget-header droppable1">
+    <p> Drop here </p>
     </div>
 
     <div class="ui-widget-content draggable2">
@@ -213,12 +284,13 @@
      <p> Drop here </p>
     </div>
 
-    <div class="ui-widget-content draggable3">
-	<p> Drag me </p>
-	</div>
-    <div class="ui-widget-header droppable3">
-     <p> Drop here </p>
-    </div>
+    <div id= "sunsetdrag">
+    <p> Drag me to sunset </p>
+    </div> 
+
+    <div id= "sunsetblock">
+     <p>waiting for sunset</p>
+    </div> 
 
     <div class="ui-widget-content draggable4">
 	<p> Drag me </p>
@@ -227,12 +299,13 @@
      <p> Drop here </p>
     </div>
 
-    <div class="ui-widget-content draggable5">
-	<p> Drag me </p>
-	</div>
-    <div class="ui-widget-header droppable5">
-     <p> Drop here </p>
-    </div>
+    <div id= "movingRainbowDrag">
+      <p> drag me to a moving rainbow </p>
+    </div> 
+
+    <div id= "movingRainbowBlock">
+      <p>waiting for a moving rainbow </p>
+    </div> 
 
 
 </body>

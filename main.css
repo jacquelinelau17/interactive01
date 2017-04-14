@@ -19,20 +19,19 @@
 	position:fixed;
 	margin:100px auto;
 	left:10%;
-	color:#313EA0;
 }
 
 	p{
-		color:#5C758E;
-		opacity:0.7;
+		color:#635453;
+		opacity:0.6;
 	}
 
  	a{
-      	color: #313EA0; 
+      	color: #C0392B; 
       	text-decoration: none;
-      	opacity:0.7;
+      	opacity:0.9;
     }
 
     a:hover {
-     	background-color: #FFFCB4;
+     	background-color: #EAFFC3;
     }

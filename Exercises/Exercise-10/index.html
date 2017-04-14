@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			var myVideo = document.getElementById("beachy");
+
+				myVideo.pause();
+
+				$("#doorbell")[0].play();
+		/*
+				var dogAudio = $("#bark")[0];
+				dogAudio.play();
+		*/
+				var dogAudio = $("#bark")[0];
+				$("#box1").mouseenter(function(){
+					dogAudio.play();
+					myVideo.play();
+				});
+
+				var catAudio = $("#meow")[0];
+				$("#box2").mouseenter(function(){
+					catAudio.play();
+					myVideo.play();
+				});
+
+				$("#box1").mouseout(function(){
+					myVideo.pause();
+				});
+
+				$("#click").click(function(){
+					$("#box2").clone().appendTo("#box1");	
+				});
+				
+			});
+
+		</script>
+
+		<style>
+			#box1{
+				width: 200px;
+				height: 200px;
+				background-image: url(assets/dog.png);
+				background-repeat: no-repeat;
+			}
+
+			#box2{
+				width: 200px;
+				height: 200px;
+				background-image: url(assets/cat.jpg);
+				background-repeat: no-repeat;
+				background-size:cover;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="box1">
+		</div>
+
+		<div id="box2">
+		</div>
+
+		<audio id= "doorbell">
+			<source src="assets/doorbell.mp3" type="audio/mp3">
+		</audio>
+
+		<audio controls>
+			<source src="assets/harmonious.mp3" type="audio/mp3">
+		</audio>
+
+		<audio id="meow">
+			<source src="assets/meow.wav" type="audio/wav">
+		</audio>
+
+		<audio id="bark">
+			<source src="assets/bark.wav" type="audio/wav">
+		</audio>
+
+		<video id="beachy" width="400" autoplay>
+			<source src="assets/turbine.mp4">
+			Sorry, your browser doesn't support HTML5 video :(
+		</video>
+
+		<a id="click">Click me!</a>
+	</body>
+</html>

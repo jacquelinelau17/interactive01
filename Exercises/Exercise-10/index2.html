@@ -1,0 +1,73 @@
+<html>
+
+	<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				var myVideo = document.getElementById("part1");
+					$("#part1").mouseenter(function(){
+						part1Audio.play();
+						part1.play();
+					})
+					$("#part1").mouseout(function(){
+						part1Audio.pause();
+						part1.pause();
+					})
+				var myVideo2 = document.getElementById("part2");
+					$("#part2").mouseenter(function(){
+						censortone.play();
+						part2.play();
+					})
+
+					$("#part2").mouseout(function(){
+						censortone.pause();
+						part2.pause();
+					})
+			})
+		</script>
+
+		<style>
+
+			body{
+				background-color:black;
+			}
+
+			#part1{
+				margin-top:10%;
+				margin-left:20%;
+				position:fixed;
+			}
+			#part2{
+				margin-left:10%;
+				margin-top:35%;
+				position:fixed;
+				border:white 5px solid;
+			}
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<video id="part1" width="800px" loop>
+			<source src="assets/part1.mp4">
+		</video>
+
+		<video id="part2" width="300px" loop>
+			<source src="assets/part2.mp4">
+		</video>
+
+		<audio id="part1Audio" loop>
+			<source src="assets/harmonious.mp3" type="audio/mp3">
+		</audio>
+
+		<audio id="censortone" loop>
+			<source src="assets/censortone.wav" type="audio/wav">
+		</audio>
+
+	</body>
+
+</html>
