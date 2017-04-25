@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="main2.css"/>
+
+		<script>
+		
+		$(document).ready(function(){
+
+		$(".caption").hide();
+
+		$(".title").hover(function(){
+			$(".caption").fadeToggle();
+		});
+
+		$('#email').addClass('animated pulse');
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s2").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s3").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s4").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s5").offset().top
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+
+		var linkArray = [
+			'<a href= "mailto:trigger@applet.ifttt.com?subject=#head">a head</a>', 
+			'<a href="mailto:trigger@applet.ifttt.com?subject=#torso">a torso</a>', 
+			'<a href="mailto:trigger@applet.ifttt.com?subject=#legs">legs</a>', 
+			'<a href="mailto:trigger@applet.ifttt.com?subject=#feet">feet</a>'
+			];
+
+		var n = 0;
+	
+		$('#buttonChange').click(function() {
+		
+		// updates the body's html with a value from the colors array
+		document.getElementById('changelink').innerHTML=linkArray[n];	
+		
+		// increments n
+		n++;
+		
+		// if n is > 5, reset n
+		if(n > 4) {
+			n = 1;
+		}
+	});
+
+  	});
+    
+  	</script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">01</button><br />
+		<button id="btn-s2">02</button><br />
+		<button id="btn-s3">03</button><br />
+		<button id="btn-s4">04</button><br />
+		<button id="btn-s5">05</button><br />
+	</div>
+
+	<div id="top"></div>
+	<div id="bottom"></div>
+	<div id="left"></div>
+	<div id="right"></div>
+
+  	<div class="box s1">
+  		<p class="title">Let's play exquisite corpse</p>
+  		<p class="caption">Exquisite corpse, also known as exquisite cadaver (from the original French term<br><em>cadavre exquis</em>, meaning rotating corpse), is a method by which a collection of<br>words or images is collectively assembled. Each collaborator adds to a composition<br>in sequence according to a specific prompt.</p>
+  	</div>
+  	
+  	<div class="box s2 email">
+  	<p>i need</p>
+  	<a href="" id="changelink" class="email">Click me</a>
+	<button id="buttonChange">Click me!</button>
+  	</div>
+  	
+  	<div class="box s3">
+  		color palette 03
+  	</div>
+  	
+  	<div class="box s4">
+  		color palette 04
+  	</div>
+  	
+  	<div class="box s5">
+  		color palette 05
+  	</div>
+
+</body>
+</html>

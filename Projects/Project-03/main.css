@@ -1,0 +1,62 @@
+.home{
+	width:60vw;
+	height:60vh;
+	background-color:#F88D73;
+	margin-top:10%;
+	margin-left:20%;
+}
+
+.title{
+	color:black;
+	font-family: 'Cutive Mono', monospace;
+	text-transform:uppercase;
+	font-weight:lighter;
+	letter-spacing: 3pt;
+	position:relative;
+	text-align:center;
+	padding-top:20%;
+	font-size:1.5em;
+}
+
+.caption{
+	font-family: 'Cutive Mono', monospace;
+	text-align:center;
+	font-size:1em;
+	line-height:1.5em;
+}
+
+
+button {
+	padding: 5px;
+	margin: 5px;
+	font-size: 1.0em;
+	cursor: crosshair;
+	font-family: 'Cutive Mono', monospace;
+	background-color:white;
+	border:none;
+}
+
+
+.nav {
+  	position: fixed;
+  	top:200px;
+  	left:0;
+  	padding: 15px;
+  	font-family: 'Cutive Mono', monospace;
+}
+
+.box1{
+ 	height: 100vh;
+ 	color: #F88D73;
+ 	text-align: center;
+ 	padding: 25px;
+ 	font-family: 'Cutive Mono', monospace;
+}
+
+.box2{
+	height: 100vh;
+ 	color: #F88D73;
+ 	text-align: center;
+ 	padding: 25px;
+ 	font-family: 'Cutive Mono', monospace;
+}

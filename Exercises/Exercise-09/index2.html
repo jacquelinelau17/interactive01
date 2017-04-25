@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+  <title>
+    Exercise 5
+  </title>
+  <style>
+	  body {
+	  	margin: 0;
+	  }
+
+  	button {
+  		padding: 5px;
+  		margin: 5px;
+  		font-size: 1.0em;
+  		cursor: crosshair;
+  		font-family: 'Cutive Mono', monospace;
+  		background-color:white;
+  		border:none;
+  	}
+
+  	.nav {
+  		position: fixed;
+  		top:200px;
+  		left:0;
+  		padding: 15px;
+  		font-family: 'Cutive Mono', monospace;
+  	}
+
+    .box {
+    	width: 100vw;
+    	color: #FFF;
+    	background-size: cover;
+    	background-position: center;
+    	text-align: center;
+    	line-height:80vh;
+    	font-family: 'Cutive Mono', monospace;
+    }
+
+    .scroll{
+      height:auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: 800px;
+      white-space:nowrap;
+      display:inline;
+    }
+/*
+    .s1 {background-image: url('assets/06.png');}
+    .s2 {background-image: url('assets/07.png');}
+    .s3 {background-image: url('assets/08.png');}
+    .s4 {background-image: url('assets/09.png');}
+    .s5 {background-image: url('assets/10.png');}*/
+
+  </style>
+
+  <script>
+
+  	$(document).ready(function(){
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollLeft: $(".s1").offset().left
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollLeft: $(".s2").offset().left
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollLeft: $(".s3").offset().left
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollLeft: $(".s4").offset().left
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollLeft: $(".s5").offset().left
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+  	});
+    
+  </script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">01</button><br />
+		<button id="btn-s2">02</button><br />
+		<button id="btn-s3">03</button><br />
+		<button id="btn-s4">04</button><br />
+		<button id="btn-s5">05</button><br />
+	</div>
+
+<!--   <div class="scroll">
+    <img src= "assets/06.png" class="s1">
+    <img src= "assets/07.png" class="s2">
+   	<img src= "assets/08.png" class="s3">
+    <img src= "assets/09.png" class="s4">
+    <img src= "assets/10.png" class="s5">
+  </div> -->
+  
+<!--   <div class='box s1 scroll'>
+  	color palette 01
+  </div>
+
+  <div class='box s2 scroll'>
+  	color palette 02
+  </div> -->
+
+<!--   <div class="scroll s1">
+  	color palette 01
+    color palette 02
+    color palette 03
+    color palette 04
+    color palette 05
+  </div> -->
+  
+<!--   <div class="scroll s2">
+  	color palette 02
+  </div>
+  
+  <div class="scroll s3">
+  	color palette 03
+  </div>
+  
+  <div class="scroll s4">
+  	color palette 04
+  </div>
+  
+  <div class="scroll s5">
+  	color palette 05
+  </div> -->
+
+</body>
+</html>

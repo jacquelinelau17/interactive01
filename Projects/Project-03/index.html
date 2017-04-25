@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="main.css"/>
+
+		<script>
+
+		// $(document).ready(function(){
+
+		// $('.title').mouseover(function(){
+  // 			$('.caption').toggle();
+		// });
+
+		$("#btn-box1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".box1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-box2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".box2").offset().top
+			    }, 1000);
+			});
+
+  	// 	$("#btn-s3").click(function() {
+			//     $('html, body').animate({
+			//         scrollTop: $(".s3").offset().top
+			//     }, 1000);
+			// });
+
+  	// 	$("#btn-s4").click(function() {
+			//     $('html, body').animate({
+			//         scrollTop: $(".s4").offset().top
+			//     }, 1000);
+			// });
+
+  	// 	$("#btn-s5").click(function() {
+			//     $('html, body').animate({
+			//         scrollTop: $(".s5").offset().top
+			//     }, 1000);
+			// });
+
+			console.log( $(".box5").offset() );
+
+
+		</script>
+	</head>
+
+	<body>
+
+
+	<div class="nav">
+		<button id="btn-box1">01</button><br />
+		<button id="btn-box2">02</button><br />
+		<button id="btn-s3">03</button><br />
+		<button id="btn-s4">04</button><br />
+		<button id="btn-s5">05</button><br />
+	</div>
+
+	<div class="box1">
+
+	<p class="title">Let's play exquisite corpse</p><br>
+
+	<p class="caption">Exquisite corpse, also known as exquisite cadaver (from the original French term cadavre exquis) or rotating corpse, is a method by which a collection of words or images is collectively assembled. Each collaborator adds to a composition in sequence according to a specific prompt.</p>
+	</div>
+
+	<div class= "box2">
+	<p class="title">trigger@applet.ifttt.com</p>
+	</div>
+
+	</body>
+
+</html>
