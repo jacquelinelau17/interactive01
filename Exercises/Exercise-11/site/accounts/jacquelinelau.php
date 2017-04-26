@@ -6,3 +6,5 @@ password: >
 email: jacqueline.lau.17@gmail.com
 language: en
 role: admin
+history:
+  - home
