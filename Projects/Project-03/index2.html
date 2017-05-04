@@ -12,13 +12,6 @@
 		
 		$(document).ready(function(){
 
-		$(".caption").hide();
-
-		$(".title").hover(function(){
-			$(".caption").fadeToggle();
-		});
-
-		$('#email').addClass('animated pulse');
 
   		$("#btn-s1").click(function() {
 			    $('html, body').animate({
@@ -38,43 +31,49 @@
 			    }, 1000);
 			});
 
-  		$("#btn-s4").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $(".s4").offset().top
-			    }, 1000);
-			});
 
-  		$("#btn-s5").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $(".s5").offset().top
-			    }, 1000);
-			});
-
-			console.log( $(".s5").offset() );
+ /*********************************************/
 
 
 		var linkArray = [
-			'<a href= "mailto:trigger@applet.ifttt.com?subject=#head">a head</a>', 
-			'<a href="mailto:trigger@applet.ifttt.com?subject=#torso">a torso</a>', 
-			'<a href="mailto:trigger@applet.ifttt.com?subject=#legs">legs</a>', 
-			'<a href="mailto:trigger@applet.ifttt.com?subject=#feet">feet</a>'
+			'<a href= "mailto:trigger@applet.ifttt.com?subject=#head">give me a head</a>', 
+			'<a href="mailto:trigger@applet.ifttt.com?subject=#torso">give me a torso</a>', 
+			'<a href="mailto:trigger@applet.ifttt.com?subject=#legfeet">give me legs & feet</a>'
 			];
 
-		var n = 0;
+
+
+
+		var n = Math.floor(Math.random() * 3);
+
 	
-		$('#buttonChange').click(function() {
-		
-		// updates the body's html with a value from the colors array
+
 		document.getElementById('changelink').innerHTML=linkArray[n];	
-		
-		// increments n
-		n++;
-		
-		// if n is > 5, reset n
-		if(n > 4) {
+
+		if(n > 2) {
 			n = 1;
 		}
-	});
+
+		var headArray = ['<img src="assets/head1.svg" class="icon head1">','<img src="assets/head2.svg" class="icon head2">','<img src="assets/head3.svg" class="icon head3">','<img src="assets/head4.svg" class="icon head4">'];
+		var torsoArray = ['<img src="assets/torso1.svg" class="icon torso1">','<img src="assets/torso2.svg" class="icon torso2">','<img src="assets/torso3.png" class="icon torso3">','<img src="assets/torso4.png" class="icon torso4">'];
+		var legfeetArray = ['<img src="assets/legfeet1.svg" class="icon legfeet1">','<img src="assets/legfeet2.svg" class="icon legfeet2">','<img src="assets/legfeet3.svg" class="icon legfeet3">','<img src="assets/legfeet4.svg" class="icon legfeet4">'];
+
+		if (n === 0) {
+			var a = Math.floor(Math.random() * 4);
+			document.getElementById('changehead').innerHTML=headArray[a];	
+		}
+
+		if (n === 1) {
+			var b = Math.floor(Math.random() * 4);
+			document.getElementById('changetorso').innerHTML=torsoArray[b];	
+		}
+
+		if (n === 2) {
+			var c = Math.floor(Math.random() * 4);
+			document.getElementById('changelegfeet').innerHTML=legfeetArray[c];	
+		}
+
+		console.log(n);
 
   	});
     
@@ -84,11 +83,9 @@
 <body>
 
 	<div class="nav">
-		<button id="btn-s1">01</button><br />
-		<button id="btn-s2">02</button><br />
-		<button id="btn-s3">03</button><br />
-		<button id="btn-s4">04</button><br />
-		<button id="btn-s5">05</button><br />
+		<button id="btn-s1"><img src="assets/dead1.png"></button><br>
+		<button id="btn-s2"><img src="assets/attachment1.png"></button><br>
+		<button id="btn-s3"><img src="assets/gallery1.png"></button><br>
 	</div>
 
 	<div id="top"></div>
@@ -102,21 +99,42 @@
   	</div>
   	
   	<div class="box s2 email">
-  	<p>i need</p>
-  	<a href="" id="changelink">Click me</a>
-	<button id="buttonChange">Click me!</button>
+  		<div class="changebox">
+  			<p><a href="" id="changelink"></a></p>
+  				<div id="changehead"></div>
+  				<div id="changetorso"></div>
+  				<div id="changelegfeet"></div>
+  		</div>
   	</div>
   	
   	<div class="box s3">
-  		color palette 03
-  	</div>
-  	
-  	<div class="box s4">
-  		color palette 04
-  	</div>
-  	
-  	<div class="box s5">
-  		color palette 05
+  		<div class="bigcontainer">
+  		<div class="container1">
+  			<img class ="item" src="assets/gallery/head5.png">
+  			<img class ="item" src="assets/gallery/torso1.png">
+  			<img class ="item" src="assets/gallery/legfeet1.png">
+  		</div>
+  		<div class="container2">
+  			<img class ="item" src="assets/gallery/head2.png">
+  			<img class ="item" src="assets/gallery/torso2.png">
+  			<img class ="item" src="assets/gallery/legfeet2.png">
+  		</div>
+  		<div class="container3">
+  			<img class ="item" src="assets/gallery/head3.png">
+  			<img class ="item" src="assets/gallery/torso3.png">
+  			<img class ="item" src="assets/gallery/legfeet3.png">
+  		</div>
+  		<div class="container4">
+  			<img class ="item" src="assets/gallery/head4.png">
+  			<img class ="item" src="assets/gallery/torso4.png">
+  			<img class ="item" src="assets/gallery/legfeet4.png">
+  		</div>
+  		<div class="container5">
+  			<img class ="item" src="assets/gallery/head1.png">
+  			<img class ="item" src="assets/gallery/torso5.png">
+  			<img class ="item" src="assets/gallery/legfeet5.png">
+  		</div>
+  		</div>
   	</div>
 
 </body>

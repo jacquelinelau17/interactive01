@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="diagnosis.css"/>
+  <title>
+    Vision Performance
+    </title>
+
+  <script>
+
+    $(window).resize(function(){
+
+  	$(document).ready(function(){
+
+      $(".btn-s1").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".s2").offset().top
+          }, 1000);
+      });
+
+      $(".btn-s2").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s3").offset().top
+          }, 1000);
+      });
+
+      $(".btn-s3").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s4").offset().top
+          }, 1000);
+      });
+
+      $(".btn-s4").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s5").offset().top
+          }, 1000);
+      });
+
+      $(".btn-s5").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s6").offset().top
+          }, 1000);
+      });
+
+      $(".btn-s6").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s7").offset().top
+          }, 1000);
+      });
+
+      // $(".btn-s7").click(function() {
+      //     $('html, body').animate({
+      //         scrollTop: $(".s7").offset().top
+      //     }, 1000);
+      // });
+
+  	});
+
+  }
+
+/********************************************************/
+
+    // // on page load...
+    // moveProgressBar();
+    // // on browser resize...
+    // $(window).resize(function() {
+    //     moveProgressBar();
+    // });
+
+    // function moveProgressBar() {
+    //   console.log("moveProgressBar");
+    //     var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+    //     var getProgressWrapWidth = $('.progress-wrap').width();
+    //     var progressTotal = getPercent * getProgressWrapWidth;
+    //     var animationLength = 2500;
+        
+    //     // on page load, animate percentage bar to data percentage length
+    //     // .stop() used to prevent animation queueing
+    //     $('.progress-bar').stop().animate({
+    //         left: progressTotal
+    //     }, animationLength);
+    // }
+
+
+     $( function() {
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+  } );
+/********************************************************/
+
+  </script>
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- <div class="progress-wrap progress" data-progress-percent="25">
+    <div class="progress-bar progress"></div></div> -->
+    <div id="progressbar"></div>
+
+</div>
+
+	<div class="nav1 s1">
+    <button><img src="assets/logo.png" style="width:9vw"></button>
+		<button class="btn-s2">/&nbsp;About</button>
+		<button class="btn-s3">/&nbsp;Contact</button>
+  </div>
+
+  <div class="box s2"></div>
+  
+  <div class="box s3"></div>
+
+  <div class="box s4"></div>
+
+  <div class="box s5"></div>
+
+  <div class="box s6"></div>
+
+  <div class="box s7"></div>
+
+
+</body>
+</html>

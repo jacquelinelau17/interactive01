@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="main2.css"/>
+
+
+  
+  <title>Vision Performance</title>
+
+  <script>
+
+  	$(document).ready(function(){
+  		
+
+      $(".btna1").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".about").offset().top
+          }, 1000);
+        $(".btna1").addClass("active");
+        $(".btna2").removeClass("active");
+      });
+
+      $(".btna2").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".contact").offset().top
+          }, 1000);
+          $(".btna2").addClass("active");
+          $(".btna1").removeClass("active");
+      });
+
+
+      $(".logo").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".homescreen").offset().top
+          }, 1000);
+          $(".btna2").removeClass("active");
+          $(".btna1").removeClass("active");
+      });
+  	});
+
+  	$(window).resize(function(){
+    $('span').text(x += 1);
+});
+
+  </script>
+</head>
+
+<body>
+
+  <div>
+    <a href="diagnosis2.html">Book Appointment</a>
+  </div>
+
+	<div class="nav">
+		<span class="btna btna2">/ Contact</span>
+    <span class="btna services">/ Services</span>
+		<span class="btna btna1">/ About</span>
+   		<div class="btna logo"><img src="assets/logo.png"></div>
+    <span class="btna login">/ Log In</span>
+  	</div>	
+
+  <div class="box homescreen">
+	  <div class="slider slider1 slider1mv"></div>
+	  <div class="slider slider2 slider2mv"></div>
+	  <div class="slider slider3 slider3mv"></div>
+	  <div class="slider slider4 slider4mv"></div>
+  </div>
+  
+  	<div class="box about"></div>
+  
+  	<div class="box contact">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12618.103138986493!2d-122.48067!3d37.754268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe6b0e9f34cff16c!2sVision+Performance!5e0!3m2!1sen!2sus!4v1493200885954" width="400" height="400" frameborder="0" allowfullscreen></iframe>
+  	</div>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="diagnosis2.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+  
+  <title>Vision Performance</title>
+
+</head>
+
+<body>
+
+  <div>
+    <span id="startover">Start Over</span>
+  </div>
+
+	<div class="nav">
+		<span class="btna btna2">/ Contact</span>
+    <span class="btna services">/ Services</span>
+		<span class="btna btna1">/ About</span>
+   	<a href="index2.html"><div><img src="assets/logo.png"></div></a>
+    <span class="btna login">/ Log In</span>
+  	</div>	
+
+
+    <div class="box appointment">
+
+      <div class="fix">
+
+      <br><br><br>
+
+      <h1>Having car trouble?</h1>
+      <p>Answer some quick questions to help us get to know your car<br>a little better so we can streamline your experience.</p>
+
+      <br>
+
+      <form>
+
+        <input type="name" placeholder='Name'><br>
+
+        <input type="phone" placeholder='Phone number'><br>
+
+        <input type="phone" placeholder='Email'>
+
+        <br> <br>
+
+        <select id="year" name="year">
+          <option value="">Select year</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+        </select>
+
+        <br>
+
+        <select id="make" name="make">
+          <option value="">Select make</option>
+          <option value="BMW">BMW</option>
+          <option value="Lexus">Lexus</option>
+          <option value="Toyota">Toyota</option>
+        </select>
+
+        <br>
+
+        <select id="model" name="model">
+          <option value="">Select model</option>
+          <option value="528i">528i</option>
+          <option value="535i">535i</option>
+          <option value="550i">550i</option>
+          <option value="640i">640i</option>
+          <option value="650i">650i</option>
+          <option value="M3">M3</option>
+          <option value="M5">M5</option>
+          <option value="M6">M6</option>
+          <option value="X5">X5</option>
+          <option value="X6">X6</option> <!-- -->
+          <option value="CT250h">CT250h</option>
+          <option value="ES350">ES350</option>
+          <option value="GS460">GS460</option>
+          <option value="HS350h">HS350h</option>
+          <option value="IS F">IS F</option>
+          <option value="IS250">IS250</option>
+          <option value="IS350">IS350</option>
+          <option value="LFA">LFA</option>
+          <option value="LS460">LS460</option>
+          <option value="RX350">RX350</option>
+          <option value="RX450h">RX450h</option> <!-- -->
+          <option value="Avalon">Avalon</option>
+          <option value="Camry">Camry</option>
+          <option value="Corolla">Corolla</option>
+          <option value="Highlander">Highlander</option>
+          <option value="Land Cruiser">Land Cruiser</option>
+          <option value="Prius">Prius</option>
+          <option value="Sequoia">Sequoia</option>
+          <option value="Tundra">Tundra</option>
+          <option value="LFA">LFA</option>
+          <option value="Venza">Venza</option>
+          <option value="Yaris">Yaris</option>
+        </select>
+
+        <button type="button" id="btnb1">Get Started</button>
+
+      </form>
+
+      </div>
+
+<!-- //////////////////////////////////////////////////////// -->
+
+      <div id="message">
+
+        <br><br><br>
+
+        <h1 id="upgrade">Looking for<br>performance tuning?</h1>
+        <p id="upgrade">Shoot us an email with your vision,<br>and we will provide the performance.</p>
+
+        <br>
+
+        <input type="name" placeholder='Name'><br>
+
+        <input type="email" placeholder='Email'><br>
+
+        <textarea value='Message' placeholder="Message"></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+      </div>
+
+      </div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+
+    <div class="box appointment2">
+
+
+    <div class="fix">
+
+    <br><br><br>
+
+    <p>Step 1</p>
+
+    <h1>What's wrong<br>with your vehicle?</h1>
+    <p>Sometimes it's hard to pinpoint what the issue is,<br>so let's start with
+    the symptoms before diagnosing<br>the problem.</p>
+  
+    <ul>
+      <li>
+        <input type="radio" id="a-option" name="selector">
+        <label for="f-option">Sight<span class="caption">i.e. oil leak, warning light, smoke</span></label>
+        <div class="check"></div>
+      </li>
+  
+    <li>
+      <input type="radio" id="b-option" name="selector">
+      <label for="s-option">Sound<span class="caption">i.e. rattle, squeal, knocking</span></label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="c-option" name="selector">
+      <label for="t-option">Feel<span class="caption">i.e. hesitation, pull, vibration</span></label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="d-option" name="selector">
+      <label for="t-option">Smell<span class="caption">i.e. gasoline, rotten eggs, burning oil</span></label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="e-option" name="selector">
+      <label for="t-option">It just refuses to start!</label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+  </ul>
+
+  <button type="button" id="btnb2">next</button>
+
+</div>
+</div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+
+<div class="box" id="appointment3">
+
+<div class="fix">
+
+    <br><br><br>
+
+    <p>Step 2</p>
+
+    <h1>What do you see?</h1>
+  
+    <ul>
+      <li>
+        <input type="radio" id="a-option" name="selector">
+        <label for="f-option">Smoke</label>
+        <div class="check"></div>
+      </li>
+  
+    <li>
+      <input type="radio" id="b-option" name="selector">
+      <label for="s-option">Puddle or leak</label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="c-option" name="selector">
+      <label for="t-option">Tire looks flat</label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="d-option" name="selector">
+      <label for="t-option">Warning light on</label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="e-option" name="selector">
+      <input type="text" placeholder='Other'><br>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+  </ul>
+
+  <button type="button" id="btnb3">next</button>
+
+</div>
+  
+
+</div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+
+<div class="box" id="appointment4">
+  
+  <div class="fix">
+
+    <br><br><br>
+
+    <p>Step 3</p>
+
+    <h1>Where is the smoke coming from?</h1>
+  
+    <ul>
+      <li>
+        <input type="radio" id="a-option" name="selector">
+        <label for="f-option">Engine compartment</label>
+        <div class="check"></div>
+      </li>
+  
+    <li>
+      <input type="radio" id="b-option" name="selector">
+      <label for="s-option">Exhaust</label>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+    <li>
+      <input type="radio" id="e-option" name="selector">
+      <input type="text" placeholder='Other'><br>
+      <div class="check"><div class="inside"></div></div>
+    </li>
+
+  </ul>
+
+  <button type="button" id="btnb4">next</button>
+
+</div>
+
+</div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+
+<div class="box" id="appointment5">
+  
+  <div class="fix">
+
+    <br><br><br>
+
+    <p>Step 4</p>
+
+    <h1>Coolant Leak</h1>
+    <p>The radiator will leak after normal wear. However, radiator failure,<br>
+    collision damage, or vehicle overheat may result if coolant is left<br>
+    unserviced. To prolong the life of the radiator, perform periodic<br>
+    maintenance on the coolant system.</p>
+
+    <br>
+
+  <button type="button" id="btnb5">Help! I want to book an appointment!</button>
+
+</div>
+
+</div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+  
+<div class="box" id="appointment6">
+
+  <div class="fix">
+
+    <br><br><br>
+
+    <h1>No worries, we got you!</h1>
+
+    <p>Please fill out your prefered date of appointment and any details<br>that you may not have had the chance to describe above.</p>
+
+    <input type="phone" name="date" placeholder="MM/DD/YY"><br>
+
+    <textarea value='Message' placeholder="Additional details"></textarea>
+
+    <br>
+
+    <button type="button" id="last">Submit</button>
+
+<!--     <button onclick="myFunction()">Try it</button> -->
+
+  </div>
+  
+</div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->
+
+  	<div class="box about"></div>
+
+<!-- //////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////// -->  
+
+  	<div class="box contact">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12618.103138986493!2d-122.48067!3d37.754268!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe6b0e9f34cff16c!2sVision+Performance!5e0!3m2!1sen!2sus!4v1493200885954" width="400" height="400" frameborder="0" allowfullscreen></iframe>
+  	</div>
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

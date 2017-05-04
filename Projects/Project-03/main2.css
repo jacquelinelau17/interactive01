@@ -12,7 +12,6 @@ body {
     width:50vw;
     margin:auto;
     padding-top:35vh;
-    cursor:crosshair;
 }
 
 .caption{
@@ -29,46 +28,54 @@ body {
 
 .email{
 	text-transform:uppercase;
-	letter-spacing: 5pt;
+	letter-spacing: 3pt;
 	font-weight:lighter;
-	font-size:36pt;
+	font-size:21pt;
 	text-align: center;
     color: white;
-    margin:auto;
-    padding-top:30vh;
     text-decoration: none;
-    cursor:crosshair;
 }
 
-#changelink{
-	text-transform:uppercase;
-	letter-spacing: 5pt;
-	font-weight:lighter;
-	font-size:36pt;
-	text-align: center;
-    color: black;
-    margin:auto;
-    padding-top:30vh;
-    text-decoration: none;
-    cursor:crosshair;
+img{
+	height:5vh;
+
+}
+
+.icon{
+	margin: auto;
+	display: block;
+	transform: scale(2);
+	top: 20px;
+    position: absolute;
 }
 
 button {
 	padding: 5px;
 	margin: 5px;
-	font-size: 1.0em;
-	cursor: crosshair;
-	font-family: 'Cutive Mono', monospace;
-	background-color:white;
 	border:none;
+	text-decoration:none;
+	background-color:transparent;
+	cursor:crosshair;
 }
 
+a{
+	text-decoration:none;
+	color: white;
+	cursor: crosshair;
+}
+
+a:hover{
+	text-shadow:6px 6px 10px rgba(0,0,0,0.5);
+}
+
+
 .nav {
-  	position: fixed;
-  	top:35vh;
-  	left:5vw;
-  	padding: 15px;
-  	font-family: 'Cutive Mono', monospace;
+	  	position: fixed;
+	  	top:35vh;
+	  	left:5vw;
+	  	padding: 15px;
+	  	font-family: 'Cutive Mono', monospace;
+	  	z-index:3000;
 }
 
 .box {
@@ -76,6 +83,46 @@ button {
     	height: 800px;
     	font-family: 'Cutive Mono', monospace;
     }
+
+#changelink{
+	position: relative;
+	display: block;
+	margin: auto;
+	top: 10%;
+
+}
+
+.changebox{
+	position: absolute;
+	top: 140%;
+	left: 5%;
+	width: 90%;
+	height: 40%;
+}
+
+#changehead{
+	position: relative;
+	margin: auto;
+	display: inline-block;
+	transform: scale(2);
+	left: -1%;
+}
+
+#changelegfeet{
+	position: relative;
+	margin: auto;
+	display: inline-block;
+	transform: scale(2);
+	left: -3%;
+}
+
+#changetorso{
+	position: relative;
+	margin: auto;
+	display: inline-block;
+	transform: scale(2);
+	left: -4%;
+}
 
 /*********************************************/
 
@@ -116,15 +163,74 @@ button {
 }
 
 #top, #bottom, #left, #right {
-    background: /*#ffad91*/ #f1b594;
+    background: #f1b594;
     z-index: 2000;
     position:fixed;
 }
 
 /*********************************************/
 
+.bigcontainer{
+	margin-top:10vh;
+	background-color:#377572;
+}
+
+.container1{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:flex-start;
+	padding-bottom:30vh;
+}
+
+.container2{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:flex-start;
+	padding-bottom:30vh;
+}
+
+.container3{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:flex-start;
+	padding-bottom:30vh;
+}
+
+.container4{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:flex-start;
+	padding-bottom:30vh;
+}
+
+.container5{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:flex-start;
+	padding-bottom:30vh;
+}
+
+.item{
+	order:<integer>;
+	width:15vw;
+	height:auto;
+	margin:1vh;
+}
+
+/*********************************************/
+
 .s1 {
-	background-color:white;
+	background-color:#ffefce;
 }
 
 .s2 {
@@ -132,14 +238,6 @@ button {
 }
 
 .s3 {
-	background-color:#ffefce;
-}
-
-.s4 {
 	background-color:#377572;
-}
-
-.s5 {
-	background-color:#f1b594;
 }
 
