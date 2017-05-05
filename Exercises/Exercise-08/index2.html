@@ -21,6 +21,7 @@
   		font-family: 'Cutive Mono', monospace;
   		background-color:white;
   		border:none;
+  		line-height:14pt;
   	}
 
   	.nav {
@@ -32,22 +33,27 @@
   	}
 
     .box {
-    	height: 800px;
+    	width: 100vw;
     	color: #FFF;
     	background-size: cover;
-    	background-position: center center;
+    	background-position: center;
     	text-align: center;
     	line-height:80vh;
-    	padding: 25px;
     	font-family: 'Cutive Mono', monospace;
-
     }
 
-    .s1 {background-image: url('assets/06.png');}
-    .s2 {background-image: url('assets/07.png');}
-    .s3 {background-image: url('assets/08.png');}
-    .s4 {background-image: url('assets/09.png');}
-    .s5 {background-image: url('assets/10.png');}
+    .scroll{
+      height:auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: 800px;
+      white-space:nowrap;
+      display:inline;
+    }
+
+    a{
+      font-size:1em;
+    }
 
   </style>
 
@@ -57,36 +63,35 @@
 
   		$("#btn-s1").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s1").offset().top
+			        scrollLeft: $(".s1").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s2").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s2").offset().top
+			        scrollLeft: $(".s2").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s3").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s3").offset().top
+			        scrollLeft: $(".s3").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s4").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s4").offset().top
+			        scrollLeft: $(".s4").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s5").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s5").offset().top
+			        scrollLeft: $(".s5").offset().left
 			    }, 1000);
 			});
 
 			console.log( $(".s5").offset() );
-
 
   	});
     
@@ -101,28 +106,17 @@
 		<button id="btn-s3">03</button><br />
 		<button id="btn-s4">04</button><br />
 		<button id="btn-s5">05</button><br />
-    <a href = "index2.html"><button>--</button></a>
+		<a href = "index.html"><button>&#8202;&#8202;&#8202;&#8202;&darr;&#8202;&#8202;&#8202;&#8202;</button></a>
 	</div>
-  
-  <div class="box s1">
-  	color palette 01
+
+  <div class="scroll">
+    <img src= "assets/06.png" class="s1">
+    <img src= "assets/07.png" class="s2">
+   	<img src= "assets/08.png" class="s3">
+    <img src= "assets/09.png" class="s4">
+    <img src= "assets/10.png" class="s5">
   </div>
-  
-  <div class="box s2">
-  	color palette 02
-  </div>
-  
-  <div class="box s3">
-  	color palette 03
-  </div>
-  
-  <div class="box s4">
-  	color palette 04
-  </div>
-  
-  <div class="box s5">
-  	color palette 05
-  </div>
+   
 
 </body>
 </html>
