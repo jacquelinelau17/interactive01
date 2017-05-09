@@ -4,36 +4,29 @@
 }
 
 body{
-	line-height: 1.5em;
 	color:#7F93C9;
 	font-size: 1em;
+	font-family: 'Cormorant Garamond', sans-serif;
 }
 
-.h1{
-	margin: 20px;
-	font-size: 3em;
-	font-family: 'Libre Franklin', sans-serif;
+h1{
+	margin-left:10vw;
+	margin-top:30vh;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:2pt;
 }
-
-.main{
-	width: 80%;
-	margin: 100px auto;
-	padding: 50px;
-	font-family: 'Libre Baskerville', serif;
-}
-
 
 ul{
 	list-style: none;
-}
- 
-ul li{
-	color: #dadada;
+	margin-left:10vw;
 }
 
-a:link{
-	color: #0000ff;
+a{
 	text-decoration: none;
+	color: black
+	font-weight:400;
+
 }
 
 a:hover{
