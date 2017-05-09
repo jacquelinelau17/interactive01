@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+  <title>
+    Exercise 5
+  </title>
+  <style>
+	  body {
+	  	margin: 0;
+	  }
+
+  	button {
+  		padding: 5px;
+  		margin: 5px;
+  		font-size: 1.0em;
+  		cursor: crosshair;
+  		font-family: 'Cutive Mono', monospace;
+  		background-color:white;
+  		border:none;
+      line-height:14pt;
+  	}
+
+  	.nav {
+  		position: fixed;
+  		top:200px;
+  		left:0;
+  		padding: 15px;
+  		font-family: 'Cutive Mono', monospace;
+  	}
+
+    .box {
+    	height: 800px;
+    	color: #FFF;
+    	background-size: cover;
+    	background-position: center center;
+    	text-align: center;
+    	line-height:80vh;
+    	padding: 25px;
+    	font-family: 'Cutive Mono', monospace;
+    }
+
+    a{
+      font-size:1.2em;
+    }
+
+    .s1 {background-image: url('assets/06.png');}
+    .s2 {background-image: url('assets/07.png');}
+    .s3 {background-image: url('assets/08.png');}
+    .s4 {background-image: url('assets/09.png');}
+    .s5 {background-image: url('assets/10.png');}
+
+  </style>
+
+  <script>
+
+  	$(document).ready(function(){
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s2").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s3").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s4").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s5").offset().top
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+
+  	});
+    
+  </script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">01</button><br />
+		<button id="btn-s2">02</button><br />
+		<button id="btn-s3">03</button><br />
+		<button id="btn-s4">04</button><br />
+		<button id="btn-s5">05</button><br />
+    <a href = "index2.html"><button>&rarr;</button></a>
+	</div>
+  
+  <div class="box s1">
+  	color palette 01
+  </div>
+  
+  <div class="box s2">
+  	color palette 02
+  </div>
+  
+  <div class="box s3">
+  	color palette 03
+  </div>
+  
+  <div class="box s4">
+  	color palette 04
+  </div>
+  
+  <div class="box s5">
+  	color palette 05
+  </div>
+
+</body>
+</html>
