@@ -34,3 +34,35 @@
 	width:800px;
 	margin-top:-14%;
 }
+
+	a{
+	text-decoration:none;
+	cursor:crosshair;
+	color:black;
+		
+	}
+	
+	button{
+	color:#7F93C9;
+	border:none;
+	border-radius:10px;
+	font-family:inherit;
+	text-transform:uppercase;
+	letter-spacing:0.5pt;
+	padding:1vh;
+	opacity:0.3;
+	background-color:transparent;
+	
+	}
+
+	button:hover{
+	opacity:1;
+	cursor:crosshair;
+	
+	}
+
+	.nav{
+	margin-left:85vw;
+	margin-top:90vh;
+	position:fixed;
+	}

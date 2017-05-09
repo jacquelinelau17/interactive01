@@ -31,3 +31,25 @@ p{
        font-weight:400;
        font-style:uppercase;
     }
+
+a{
+  text-decoration:none;
+  cursor:crosshair;
+  color:#02002E;
+  opacity:0.5;
+  letter-spacing:2pt;
+  font-weight:500;
+
+}
+
+a:hover{
+  opacity:1;
+  cursor:crosshair;
+}
+
+.nav{
+  margin-left:46vw;
+  margin-top:80vh;
+  position:fixed;
+  z-index:1000;
+}

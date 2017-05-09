@@ -31,3 +31,22 @@
 	padding:7%;
 
 }
+
+a{
+	text-decoration:none;
+	cursor:crosshair;
+	color:grey;
+	opacity:0.3;
+}
+
+a:hover{
+	opacity:1;
+	cursor:crosshair;
+}
+
+.nav{
+	margin-left:85vw;
+	margin-top:90vh;
+	position:fixed;
+	z-index:1000;
+}

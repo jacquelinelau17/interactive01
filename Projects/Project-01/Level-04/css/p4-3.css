@@ -49,3 +49,23 @@
 	opacity:0.1;
 	display:block;
 }
+
+
+a{
+	text-decoration:none;
+	cursor:crosshair;
+	color:green;
+	opacity:0.3;
+}
+
+a:hover{
+	opacity:1;
+	cursor:crosshair;
+}
+
+.nav{
+	margin-left:85vw;
+	margin-top:-10vh;
+	position:absolute;
+	z-index:1000;
+}

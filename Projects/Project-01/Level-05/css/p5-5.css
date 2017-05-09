@@ -6,15 +6,21 @@
 
     }
 
+.poem:hover{
+  box-shadow:6px 6px 10px rgba(0,0,0,0.3);
+  animation-play-state: paused;
+}
+
 .h{
       font-family: 'Barrio', cursive;
-      margin: 50px auto;
-      width: 500px;
+      text-align:center;
+      letter-spacing:1pt;
+      padding-left:20px;
     }
 
+
 .adj{
-      margin: 10px auto;
-      width: 300px;
+      text-align:center;
       font-family: 'Lekton', sans-serif;
       font-weight: 700;
     }
@@ -24,7 +30,6 @@
       height: 200px;
       width: 200px;
       background-color: #93E5F0;
-      transform: rotate(20deg);
       margin: 100px auto;
       padding:20px;
     }
@@ -34,8 +39,7 @@
       width: 200px;
       height: 250px;
       background-color: #63A3D8;
-      transform: rotate(-20deg);
-      margin: 50px;
+      margin-left:100px;
       top: 300px;
       padding:20px;
     
@@ -45,10 +49,32 @@
       width: 200px;
       height: 200px;
       background-color: #A38DF5;
-      transform: rotate(-30deg);
       margin: 200px auto;
       position: absolute;
       top: 200px;
       right: 120px;
       padding:20px;
     }
+
+a{
+  text-decoration:none;
+  cursor:crosshair;
+  color:darkblue;
+  opacity:0.3;
+  letter-spacing:2pt;
+  font-weight:500;
+
+}
+
+a:hover{
+  opacity:1;
+  cursor:crosshair;
+}
+
+.nav{
+  margin-left:85vw;
+  margin-top:90vh;
+  position:fixed;
+  z-index:1000;
+  font-family: 'Barrio', cursive;
+}

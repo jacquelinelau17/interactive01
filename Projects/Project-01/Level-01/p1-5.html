@@ -10,17 +10,32 @@
 	</head>
 
 	<style>
-	.nav{
-		font-style:sans-serif;
-		font-weight:lighter;
-		letter-spacing:2pt;
-		font-size:0.5em;
-		background-color:white;
+		a{
+		text-decoration:none;
+		cursor:crosshair;
 		color:black;
-		padding:1%;
-		width:220px;
-		text-align:center;
-		margin:100px auto;
+	}
+	
+	button{
+	color:#7F93C9;
+	border:none;
+	border-radius:10px;
+	font-family:inherit;
+	text-transform:uppercase;
+	letter-spacing:0.5pt;
+	padding:1vh;
+	opacity:0.3;
+	background-color:transparent;
+	}
+
+	button:hover{
+	opacity:1;
+	cursor:crosshair;
+	}
+
+	.nav{
+		margin-left:85vw;
+		margin-top:45vh;
 	}
 	</style>
 
@@ -80,9 +95,9 @@
 	</div>
 
 	<div class="nav">
-	<a href="p1-4.html"> &laquo; BACK </a>
-	<a href="../../../index.html"> HOME </a>
-	<a href="../Level-02/variations-02.html"> NEXT &raquo;</a>
+		<button><a href="p1-4.html">&larr;</a></button>
+		<button><a href="../index.html">HOME</a></button>
+		<button><a href="../Level-02/variations-02.html">&rarr;</a></button>
 	</div>
 
 </html>
